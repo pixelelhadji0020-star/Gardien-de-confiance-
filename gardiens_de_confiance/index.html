@@ -3,75 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gardiens de Confiance | Sérénité & Vigilance</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>Gardiens de Confiance | Sérénité Auto & Suivi de Chantier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
     <header class="hero">
-        <nav class="navbar" data-aos="fade-down">
-            <div class="logo-text">GARDIENS DE CONFIANCE</div>
-            <a href="https://wa.me/221776729740" class="btn-wa pulse"><i class="fa-brands fa-whatsapp"></i> Contact Rapide</a>
-        </nav>
-        <div class="hero-content" data-aos="zoom-in">
-            <h1>Expertise et Vigilance pour vos actifs au Sénégal</h1>
-            <div class="switcher">
-                <button class="tab-btn active" onclick="switchView('auto')">Sérénité Auto</button>
-                <button class="tab-btn" onclick="switchView('chantier')">Vigilance Immobilière</button>
+        <div class="header-top" data-aos="fade-down" data-aos-duration="800">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Gardiens de Confiance" class="logo" onerror="this.style.display='none'">
+                <span class="brand-name">GARDIENS DE CONFIANCE</span>
+            </div>
+            <a href="https://wa.me/221776729740?text=Bonjour..." class="btn-header-wa" target="_blank">
+                <i class="fa-brands fa-whatsapp pulse-icon"></i> Contact Rapide
+            </a>
+        </div>
+        
+        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1000">
+            <h1>La gestion de vos actifs au Sénégal passe à l'ère professionnelle.</h1>
+            <p class="subtitle">Services de conciergerie automobile et immobilière pour la diaspora. Un interlocuteur unique, une rigueur européenne.</p>
+            
+            <div class="service-switcher">
+                <button class="switch-btn active" onclick="switchService('auto')"><i class="fa-solid fa-car"></i> Sérénité Automobile</button>
+                <button class="switch-btn" onclick="switchService('chantier')"><i class="fa-solid fa-trowel-bricks"></i> Vigilance Chantier</button>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="auto" class="price-section active" data-aos="fade-up">
+        <section id="section-auto" class="service-section active">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Votre véhicule au pays, prêt à rouler dès votre atterrissage</h2>
+                <p>L'immobilisation prolongée détériore les moteurs. Nous assurons une maintenance préventive rigoureuse.</p>
+            </div>
+
             <div class="pricing-grid">
-                <div class="card tilt">
-                    <h3>ESSENTIEL</h3>
-                    <p class="price">15 000 FCFA <span>/ mois</span></p>
-                    <ul><li>2 Visites / mois</li><li>Démarrage & Niveaux</li></ul>
+                <div class="price-card tilt-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header">
+                        <h3>ESSENTIEL</h3>
+                        <p class="price">23 € <span>/ mois</span></p>
+                        <p class="fca-eq">(15 000 FCFA / mois)</p>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check"></i> 2 Visites / mois</li>
+                        <li><i class="fa-solid fa-check"></i> Démarrage moteur (15-20 min)</li>
+                        <li><i class="fa-solid fa-check"></i> Contrôle strict des fluides</li>
+                        <li><i class="fa-solid fa-check"></i> Vérification pression des pneus</li>
+                        <li><i class="fa-solid fa-check"></i> Rapport photo & statut textuel</li>
+                    </ul>
+                    <a href="https://wa.me/221776729740" class="btn-gold" target="_blank">Souscrire sur WhatsApp</a>
                 </div>
-                <div class="card featured tilt">
-                    <div class="badge">RECOMMANDÉ</div>
-                    <h3>PRESTIGE</h3>
-                    <p class="price">30 000 FCFA <span>/ mois</span></p>
-                    <ul><li>1 Visite / semaine</li><li>Nettoyage + Roulage</li></ul>
+
+                <div class="price-card featured tilt-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="badge-reco">Recommandé</div>
+                    <div class="card-header">
+                        <h3>PRESTIGE</h3>
+                        <p class="price">46 € <span>/ mois</span></p>
+                        <p class="fca-eq">(30 000 FCFA / mois)</p>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check"></i> 1 Visite / semaine</li>
+                        <li><i class="fa-solid fa-check"></i> Nettoyage intérieur & extérieur</li>
+                        <li><i class="fa-solid fa-check"></i> Roulage d'entretien (5 km)</li>
+                        <li><i class="fa-solid fa-check"></i> Check-up complet</li>
+                        <li><i class="fa-solid fa-check"></i> Rapport PDF & Vidéo HD</li>
+                    </ul>
+                    <a href="https://wa.me/221776729740" class="btn-gold featured-btn style-hover" target="_blank">Souscrire sur WhatsApp</a>
                 </div>
-                <div class="card tilt">
-                    <h3>ÉLITE</h3>
-                    <p class="price">50 000 FCFA <span>/ mois</span></p>
-                    <ul><li>Sur Mesure</li><li>Conciergerie Totale</li></ul>
+
+                <div class="price-card tilt-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-header">
+                        <h3>ÉLITE</h3>
+                        <p class="price">76 € <span>/ mois</span></p>
+                        <p class="fca-eq">(50 000 FCFA / mois)</p>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check"></i> Suivi sur mesure & Conciergerie</li>
+                        <li><i class="fa-solid fa-check"></i> Gestion contrôle technique</li>
+                        <li><i class="fa-solid fa-check"></i> Préparation VIP avant arrivée</li>
+                        <li><i class="fa-solid fa-check"></i> Transfert aéroport AIBD inclus</li>
+                        <li><i class="fa-solid fa-check"></i> Appels vidéo en direct</li>
+                    </ul>
+                    <a href="https://wa.me/221776729740" class="btn-gold" target="_blank">Souscrire sur WhatsApp</a>
                 </div>
             </div>
         </section>
 
-        <section class="trust-zone" data-aos="fade-up">
-            <h2>Sécurité et Transparence Totale</h2>
-            <div class="trust-grid">
-                <div class="trust-item">
-                    <i class="fa-solid fa-id-card"></i>
-                    <h4>Identité Garantie</h4>
-                    <p>Une copie de ma CNI vous est fournie systématiquement avant tout contrat.</p>
+        <section id="section-chantier" class="service-section">
+            <div class="section-header">
+                <h2>Suivez l'avancement de vos travaux avec des yeux d'expert</h2>
+                <p>Évitez les malfaçons et la disparition de matériaux. Un audit neutre et documenté.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="price-card tilt-card">
+                    <div class="card-header">
+                        <h3>VISITE D'URGENCE</h3>
+                        <p class="price">31 € <span>/ visite</span></p>
+                        <p class="fca-eq">(20 000 FCFA / visite)</p>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check"></i> Intervention ponctuelle rapide</li>
+                        <li><i class="fa-solid fa-check"></i> Vérification suite aux intempéries</li>
+                        <li><i class="fa-solid fa-check"></i> Débriefing avec les équipes</li>
+                        <li><i class="fa-solid fa-check"></i> Rapport d'état des lieux immédiat</li>
+                    </ul>
+                    <a href="https://wa.me/221776729740" class="btn-gold" target="_blank">Planifier une visite</a>
                 </div>
-                <div class="trust-item">
-                    <i class="fa-solid fa-file-signature"></i>
-                    <h4>Contrat Bilatéral</h4>
-                    <p>Chaque mission est scellée par un contrat signé pour protéger vos intérêts.</p>
+
+                <div class="price-card featured tilt-card">
+                    <div class="badge-reco">Populaire</div>
+                    <div class="card-header">
+                        <h3>SUIVI CLASSIQUE</h3>
+                        <p class="price">54 € <span>/ mois</span></p>
+                        <p class="fca-eq">(35 000 FCFA / mois)</p>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check"></i> 2 audits approfondis / mois</li>
+                        <li><i class="fa-solid fa-check"></i> Suivi rigoureux gros œuvre/finitions</li>
+                        <li><i class="fa-solid fa-check"></i> Inventaire sommaire des matériaux</li>
+                        <li><i class="fa-solid fa-check"></i> Dossier photos HD & vidéo</li>
+                    </ul>
+                    <a href="https://wa.me/221776729740" class="btn-gold featured-btn style-hover" target="_blank">Lancer le suivi</a>
                 </div>
-                <div class="trust-item">
-                    <i class="fa-solid fa-handshake-simple"></i>
-                    <h4>Rencontre Physique</h4>
-                    <p>Rendez-vous possible à Dakar avant signature pour valider la confiance.</p>
+
+                <div class="price-card tilt-card">
+                    <div class="card-header">
+                        <h3>RIGUEUR TOTALE</h3>
+                        <p class="price">92 € <span>/ mois</span></p>
+                        <p class="fca-eq">(60 000 FCFA / mois)</p>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check"></i> 1 visite de contrôle / semaine</li>
+                        <li><i class="fa-solid fa-check"></i> Capture vidéo 360° du site</li>
+                        <li><i class="fa-solid fa-check"></i> Pointage rigoureux des stocks</li>
+                        <li><i class="fa-solid fa-check"></i> Appels en direct depuis le site</li>
+                    </ul>
+                    <a href="https://wa.me/221776729740" class="btn-gold" target="_blank">Lancer le suivi</a>
+                </div>
+            </div>
+
+            <div class="combo-banner hover-glow">
+                <div class="combo-info">
+                    <span class="combo-tag">OFFRE SPÉCIALE</span>
+                    <h3>Pack Patrimoine (Auto Prestige + Chantier Classique)</h3>
+                    <p>Combinez l'entretien complet de votre véhicule et le suivi bimensuel de votre construction.</p>
+                </div>
+                <div class="combo-price">
+                    <span class="old-price">99 €</span>
+                    <span class="new-price">84 € <span>/ mois</span></span>
+                    <a href="https://wa.me/221776729740" class="btn-gold featured-btn style-hover" target="_blank">Profiter du Pack</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-section">
+            <div class="trust-container">
+                <h2 data-aos="fade-up">Le socle de notre engagement : La Sécurité Absolue</h2>
+                <p class="trust-subtitle" data-aos="fade-up" data-aos-delay="100">Un cadre contractuel et humain irréprochable pour éliminer toute inquiétude.</p>
+                
+                <div class="trust-grid">
+                    <div class="trust-item interactive-item" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="icon-gold"><i class="fa-solid fa-id-card-clip"></i></div>
+                        <h4>Identité Certifiée</h4>
+                        <p>Copie légalisée de la carte d'identité transmise avant toute remise de clés.</p>
+                    </div>
+
+                    <div class="trust-item interactive-item" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="icon-gold"><i class="fa-solid fa-file-signature"></i></div>
+                        <h4>Cadre Contractuel</h4>
+                        <p>Contrat formel signé par les deux parties, engageant nos obligations strictes.</p>
+                    </div>
+
+                    <div class="trust-item interactive-item" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="icon-gold"><i class="fa-solid fa-handshake-simple"></i></div>
+                        <h4>Rendez-vous Physique</h4>
+                        <p>Possibilité d'organiser une rencontre préalable à Dakar pour validation de visu.</p>
+                    </div>
+
+                    <div class="trust-item interactive-item" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="icon-gold"><i class="fa-solid fa-camera-viewfinder"></i></div>
+                        <h4>Preuves Numériques</h4>
+                        <p>Horodatage crypté (Timestamp : date, heure et géolocalisation GPS sur chaque média).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" data-aos="fade-up">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Démarrons notre collaboration</h2>
+                    <p>Une question spécifique ? Notre support est réactif et à votre écoute.</p>
+                    <div class="contact-details">
+                        <div class="detail-line"><i class="fa-solid fa-envelope"></i><div><span>Email direct</span><p>sarrdigitalbrainner@gmail.com</p></div></div>
+                        <div class="detail-line"><i class="fa-brands fa-whatsapp"></i><div><span>Ligne sécurisée</span><p>+221 77 672 97 40</p></div></div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container glow-box">
+                    <form action="mailto:sarrdigitalbrainner@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                        <div class="form-group"><label>Votre Nom & Prénom</label><input type="text" required></div>
+                        <div class="form-group"><label>Service concerné</label><select><option>Auto</option><option>Chantier</option></select></div>
+                        <div class="form-group"><label>Message</label><textarea rows="4" required></textarea></div>
+                        <button type="submit" class="btn-gold featured-btn style-submit style-hover">Envoyer ma demande</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <p>Contact : sarrdigitalbrainner@gmail.com</p>
-        <p>© 2026 Gardiens de Confiance. Tous droits réservés.</p>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Gardiens de Confiance. Tous droits réservés.</p>
+        </div>
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
